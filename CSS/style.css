@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    width: 940px;
+    margin: 5% auto;
+    min-height: 100%;
+    background-image: url(../images/adventure.jpg);
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+li {
+    padding: 5px 0;
+    animation: fadein 5s;
+}
+
+li::before {
+    content: "• ";
+    color: #EC6778;
+}
+
+.col-40 h1 {
+    font-size: 20px;
+    color: #E84A5F;
+}
+
+.col-40,
+.col-60 {
+    display: table-cell;
+    margin: 0;
+    vertical-align: top;
+}
+
+.col-40 {
+    background: #FFF;
+    padding: 20px;
+    color: #000;
+    width: 40%;
+    box-sizing: border-box;
+}
+
+.col-60 {
+    background: red;
+    width: 60%;
+    box-sizing: border-box;
+}
+
+#flecha {
+    font-size: 60px;
+}
+
+.texto-centrado {
+    text-align: center;
+}
+
+#juego div {
+    text-align: center;
+    animation: fadein 2s;
+}
+
+.piezas img {
+    width: 33.3333%;
+    height: 187.9844px;
+    /*como la img de la pieza 9 estaba vacia fijo el alto de todas las piezas para que funcione y tome la pieza 9 como un cuadro mas del juego*/
+    float: left;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
